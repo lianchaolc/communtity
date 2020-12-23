@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <script src="http://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" href="css/jquery-ui.min.css" th:href="@{/css/jquery-ui.min.css}" />
+    <title>index</title>
+</head>
+<body>
+<h4> 顶部的标题1111</h4>
+
+<table>
+    <tr>
+        <th>学生Id</th>
+        <th>学生姓名</th>
+        <th>学生年龄</th>
+    </tr>
+    <div th:each="datas:${student}"></div>
+    <!--<tr th:each="student:${stulist}">-->
+        <!--<td th:text="${student.username}"></td>-->
+        <!--<td th:text="${student.getUserid}"></td>-->
+            <!--<span th:each="user:${student}"> [[${student}]] </span>-->
+    </tr>
+</table>
+</body>
+</html>
